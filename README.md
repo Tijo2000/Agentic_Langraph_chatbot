@@ -1,8 +1,10 @@
-# Langraph_chatbot : https://tijo-langchat.streamlit.app/
+# Langraph_chatbot : 
+https://tijo-langchat.streamlit.app/
 
 This project is a chatbot application built using FastAPI, Streamlit, and LangGraph. The chatbot interacts with users through a web interface and processes their messages using a LangGraph-based agent.
 
 ## Project Structure
+```sh
 Agentic_Langraph_chatbot/
 ├── app.py                                    # Main file with fast api backend
 ├── Dockerfile                                # DockerFile
@@ -10,7 +12,7 @@ Agentic_Langraph_chatbot/
 ├── requirements.txt                          # Dependencies
 └── ui.py                                     # Streamlit file for Frond end 
 .env(Please add your api keys here, I didn't) # Environment variable template
-
+```
 
 ## Tools and Libraries
 
