@@ -5,12 +5,13 @@ import requests
 st.set_page_config(page_title="LangGraph Agent UI", layout="centered")
 
 # Define API endpoint
-API_URL = "http://127.0.0.1:8000/chat"
+# API_URL = "http://127.0.0.1:8000/chat"
+API_URL = "https://agentic-langraph-chatbot.onrender.com"
 
 
 
 # Streamlit UI Elements
-st.title("LangGraph Chatbot Agent")
+st.title("Langchat Agent")
 st.write("Interact with the LangGraph-based agent using this interface.")
 
 # Input box for system prompt
@@ -60,3 +61,10 @@ if st.button("Submit"):
             st.error(f"An error occurred: {e}")
     else:
         st.warning("Please enter a message before clicking 'Send Query'.")
+        
+        
+# Footer with credits
+st.markdown("---")
+st.markdown(
+    "🚀 **Built by Tijo Thomas** | Powered by **FastAPI, Tavily, Groq, Render, Docker, Streamlit**"
+)
